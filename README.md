@@ -6,7 +6,7 @@ This application shows a 5-day forecast for a city in a visually compelling mann
 
 The way I approached this task was not to spend many days to weeks on creating the perfect product visually or functionally initially, but to follow the lean startup and agile methodologies and create a minimum viable product (MVP) which can be presented to a customer to gain feedback and insight and develop the product iteratively thereby, reducing waste. 
 
-With that said, I created an application with a simple layout, and simple features that was required by the exercise document. My next steps would be to release the MVP, get feedback from customers, collaborate with my team (UI/UX designers, software developers) to improve upon the initial product and increase the chance of success of the product. 
+With that said, I created an application with a simple layout, and simple features that was required by the exercise document. My next steps would be to release the MVP, get feedback from customers, collaborate with my team (UI/UX designers, software developers) to improve upon the initial product, produce features of the product that customers want, and increase the chance of success of the product. 
 
 
 To run the application,
