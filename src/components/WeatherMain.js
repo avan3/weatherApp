@@ -15,7 +15,11 @@ class WeatherMain extends Component {
                     <Card.Header as='h3'>{today.dt_txt}</Card.Header>
                     <Card.Header as='h3'>Temperature: {today.main.temp} °C</Card.Header>
                     <Card.Description>Feels Like: {today.main.feels_like} °C</Card.Description>
-                    <Card.Description>Weekly Average Pressure: {avgPressure}</Card.Description>
+                    <Card.Description 
+                        style={{textTransform: 'None'}}
+                    >
+                        Weekly Average Pressure: {avgPressure} hPa
+                    </Card.Description>
                 </span>
             );
         };
