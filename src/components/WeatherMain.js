@@ -9,10 +9,12 @@ class WeatherMain extends Component {
         const { today, cityInfo, avgPressure } = this.props;
         let weather = null;
         if (today.main) {
+            let d = new Date(today.dt_txt.substring(0,10));
+            let n = d.toDateString();
             weather = (
                 <span>
                     <Card.Header as='h2' className='weatherDesc'>{today.weather[0].description}</Card.Header>
-                    <Card.Header as='h3'>{today.dt_txt}</Card.Header>
+                    <Card.Header as='h3'>{n}</Card.Header>
                     <Card.Header as='h3'>Temperature: {today.main.temp} °C</Card.Header>
                     <Card.Description>Feels Like: {today.main.feels_like} °C</Card.Description>
                     <Card.Description 
