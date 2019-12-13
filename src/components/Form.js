@@ -14,7 +14,7 @@ class Form extends Component {
         const { searchTerm } = this.state;
         // Validate input with regex
         // Word followed by comma and two letters for country code
-        const isValid = /^\w+,(\s{1})?[a-zA-Z]{2}$/.test(searchTerm);
+        const isValid = /^[\w\s]+,(\s{1})?[a-zA-Z]{2}$/.test(searchTerm);
         return (
             <div className='top'>
                 {/*Header*/}
