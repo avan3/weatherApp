@@ -6,20 +6,18 @@
     color: #fff;
 }
 
-form {
+.weatherForm {
    display: inline-block;
    margin-top: 30px;
    position: absolute;
    right: 0;
 }
 
-input {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+.cityInput {
     padding: 5px;
 }
 
-button {
+.submitButton {
     margin-right: 20px;
     padding: 6px;
     background-color: darkblue;

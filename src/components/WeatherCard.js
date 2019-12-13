@@ -3,10 +3,11 @@ import { Card, Image } from 'semantic-ui-react';
 import './WeatherCard.css';
 
 class WeatherCard extends Component {
-    state = {}
+    state = {};
 
     render() {
         const { info } = this.props;
+        // Format entire date with time into only date
         let d = new Date(info.dt_txt.substring(0,10));
         let n = d.toDateString();
         return (
@@ -23,7 +24,7 @@ class WeatherCard extends Component {
                 </Card.Content>
             </Card>
         );
-    }
-}
+    };
+};
 
 export default WeatherCard;

@@ -6,14 +6,16 @@ class WeatherMain extends Component {
     state = {};
 
     render() {
-        const { today, cityInfo } = this.props;
+        const { today, cityInfo, avgPressure } = this.props;
         let weather = null;
         if (today.main) {
             weather = (
                 <span>
                     <Card.Header as='h2' className='weatherDesc'>{today.weather[0].description}</Card.Header>
+                    <Card.Header as='h3'>{today.dt_txt}</Card.Header>
                     <Card.Header as='h3'>Temperature: {today.main.temp} °C</Card.Header>
                     <Card.Description>Feels Like: {today.main.feels_like} °C</Card.Description>
+                    <Card.Description>Weekly Average Pressure: {avgPressure}</Card.Description>
                 </span>
             );
         };
