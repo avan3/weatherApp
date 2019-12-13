@@ -1,0 +1,10 @@
+.sidePanel {
+    width: 19.2% !important;
+    text-align: center;
+    background-color: royalblue !important;
+}
+
+.header, .description {
+    color: #fff !important;
+    text-transform: capitalize;
+}
